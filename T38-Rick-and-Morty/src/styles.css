@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 100%;}
+
+body{
+  background-image: url("/assets/info-wallpapers.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100%;
+}

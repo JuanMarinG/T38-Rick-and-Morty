@@ -1,1 +1,15 @@
-<p>info works!</p>
+<div class="card" style="width: 18rem;">
+  <img src={{datos.image}}>
+  <div class="card-body">
+    <h5 class="card-title">Nombre: {{datos.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Status: {{datos.status}}</li>
+    <li class="list-group-item">Especie: {{datos.species}}</li>
+    <li class="list-group-item">Origen: {{datos.origin.name}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="../characters/" class="btn btn-primary">Volver</a>
+  </div>
+
+</div>
