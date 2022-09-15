@@ -4,4 +4,5 @@ export class Characters {
   status?: boolean;
   species?: string;
   origin?: string;
+  image?:any;
 }

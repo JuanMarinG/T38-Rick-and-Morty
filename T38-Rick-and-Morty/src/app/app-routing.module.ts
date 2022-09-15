@@ -21,7 +21,7 @@ const routes: Routes = [
         path: 'info/:id',
         component: InfoComponent
     }, {
-        path: 'add/',
+        path: 'add',
         component: AddCharacterComponent
     }
 

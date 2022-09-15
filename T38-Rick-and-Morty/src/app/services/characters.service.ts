@@ -8,7 +8,7 @@ import { Characters } from '../models/characters.model';
 })
 export class CharactersService {
 
-  urlApi="https://rickandmortyapi.com/api/character";
+  urlApi='https://rickandmortyapi.com/api/character';
 
   constructor(private http: HttpClient) { }
 
