@@ -1,0 +1,9 @@
+#container {
+  text-align: center;
+  color: aliceblue;
+  font-family:'Courier New', Courier, monospace;
+  border-style:dashed;
+  border-color: aliceblue;
+  border-width: 2px;
+  margin-top: 5%;
+}
