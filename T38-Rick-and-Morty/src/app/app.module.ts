@@ -15,7 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
-import { AuthinterceptorComponent } from './_helpers/authinterceptor/authinterceptor.component';
+import { authInterceptorProviders } from './_helpers/authinterceptor';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { AuthinterceptorComponent } from './_helpers/authinterceptor/authinterce
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    AuthinterceptorComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +38,7 @@ import { AuthinterceptorComponent } from './_helpers/authinterceptor/authinterce
     FormsModule,
     NgxPaginationModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

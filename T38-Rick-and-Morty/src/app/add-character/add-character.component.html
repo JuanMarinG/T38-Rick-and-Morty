@@ -2,19 +2,19 @@
   <div>
     <div class="form-group my-2">
       <label for="name">Name</label>
-      <input type="text" class="form-control"  required [(ngModel)]="character.name" />
+      <input type="text" class="form-control"  [(ngModel)]="newCharacter.name" />
     </div>
     <div class="form-group my-2">
       <label for="gender">Status</label>
-      <input type="text" class="form-control" [(ngModel)]="character.status" required />
+      <input type="text" class="form-control" [(ngModel)]="newCharacter.status" />
     </div>
     <div class="form-group my-2">
       <label for="species">Species</label>
-      <input type="text" class="form-control" [(ngModel)]="character.species" required />
+      <input type="text" class="form-control" [(ngModel)]="newCharacter.species"/>
     </div>
     <div class="form-group my-2">
       <label for="location">Origin</label>
-      <input type="text" class="form-control" [(ngModel)]="character.origin" required /><br>
+      <input type="text" class="form-control" [(ngModel)]="newCharacter.origin"/><br>
       <div>
         <button (click)="saveCharacter()" class="btn btn-success">Add</button>
       </div>

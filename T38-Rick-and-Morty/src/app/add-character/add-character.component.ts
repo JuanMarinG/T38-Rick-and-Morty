@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Characters } from '../models/characters.model';
+import { Component, Input, OnInit } from '@angular/core';
+import { Character } from '../models/characters.model';
 import { CharactersService } from '../services/characters.service';
+
 
 @Component({
   selector: 'app-add-character',
@@ -9,16 +10,11 @@ import { CharactersService } from '../services/characters.service';
 })
 export class AddCharacterComponent implements OnInit {
 
-character: Characters ={
-  name:'',
-  status:'',
-  species:'',
-  origin:'',
-  image:''
 
-};
-
+  @Input()
+  newCharacter!: Character;
 submitted=false;
+
 
   constructor(private api: CharactersService) { }
 
@@ -27,10 +23,10 @@ submitted=false;
 
   saveCharacter() {
     const data = {
-      name: this.character.name,
-      status: this.character.status,
-      species: this.character.species,
-      origin: this.character.origin
+      name: this.newCharacter.name,
+      status: this.newCharacter.status,
+      species: this.newCharacter.species,
+      origin: this.newCharacter.origin
     };
 
     this.api.create(data).subscribe(
@@ -42,16 +38,6 @@ submitted=false;
         console.log(error);
       }
     );
-  }
-
-  newCharacter() {
-    this.submitted = false;
-    this.character = {
-      name: '',
-      status: '',
-      species: '',
-      origin: ''
-    }
   }
 
 }
