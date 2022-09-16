@@ -1,0 +1,11 @@
+.submit-form{
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 15px;
+}
+

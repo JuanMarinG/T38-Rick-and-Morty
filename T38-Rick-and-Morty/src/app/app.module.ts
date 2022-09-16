@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { InfoComponent } from './info/info.component';
+import { AddCharacterComponent } from './add-character/add-character.component';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { InfoComponent } from './info/info.component';
     HomeComponent,
     CharactersComponent,
     AboutComponent,
-    InfoComponent
+    InfoComponent,
+    AddCharacterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
