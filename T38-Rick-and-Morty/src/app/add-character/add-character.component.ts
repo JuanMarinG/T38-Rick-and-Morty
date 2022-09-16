@@ -11,7 +11,7 @@ export class AddCharacterComponent implements OnInit {
 
 character: Characters ={
   name:'',
-  status:true,
+  status:'',
   species:'',
   origin:'',
   image:''
@@ -48,7 +48,7 @@ submitted=false;
     this.submitted = false;
     this.character = {
       name: '',
-      status:true,
+      status: '',
       species: '',
       origin: ''
     }

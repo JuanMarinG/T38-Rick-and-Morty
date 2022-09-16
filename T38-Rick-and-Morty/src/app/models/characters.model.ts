@@ -1,7 +1,7 @@
 export class Characters {
   id?: number;
   name?: string;
-  status?: boolean;
+  status?: string;
   species?: string;
   origin?: string;
   image?:any;
